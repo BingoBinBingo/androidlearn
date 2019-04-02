@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Android学习</string>
-
-    <string name="button_1">按钮1</string>
-    <string name="button_2">按钮2</string>
-    <string name="button_long_click_title">按钮被长点击了</string>
-</resources>
