@@ -127,7 +127,6 @@ public class LoginActivity extends AppCompatActivity {
         dialog.show();
     }
 
-
     private String getValue(String json, String attr)
     {
 
