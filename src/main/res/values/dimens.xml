@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_margintop">10dp</dimen>
+    <dimen name="layout_height">150dp</dimen>
+    <!-- dp sp px pt -->
+
+</resources>
