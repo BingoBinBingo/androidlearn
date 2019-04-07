@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".parctice.LoginActivity"/>
         <activity android:name=".ui.activity.FirstActivity"/>
         <activity android:name=".ui.activity.SecondActivity"/>
         <activity android:name=".ui.widget.WidgetActivity"/>

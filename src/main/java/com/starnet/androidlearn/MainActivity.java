@@ -20,6 +20,7 @@ import com.starnet.androidlearn.media.PlayAudioActivity;
 import com.starnet.androidlearn.media.PlayVideoActivity;
 import com.starnet.androidlearn.network.HttpActivity;
 import com.starnet.androidlearn.network.WebViewActivity;
+import com.starnet.androidlearn.parctice.LoginActivity;
 import com.starnet.androidlearn.thread.AsyncTaskActivity;
 import com.starnet.androidlearn.thread.HandlerActivity;
 import com.starnet.androidlearn.thread.ThreadActivity;
@@ -32,6 +33,7 @@ import java.util.List;
 
 public class MainActivity extends Activity {
 
+    private static final String TITLE_UI_LOGIN = "1.1：登录界面作业";
     private static final String TITLE_UI_ACTIVITY = "2.1：四大组件之-Activity";
     private static final String TITLE_UI_WIDGET = "2.2：常见的控件的使用方式";
     private static final String TITLE_UI_LAYOUT = "2.3：四大布局";
@@ -58,6 +60,7 @@ public class MainActivity extends Activity {
     private List<Class> mActivityClassList = new ArrayList<>();
 
     {
+        mActivityClassList.add(LoginActivity.class);
         mActivityClassList.add(FirstActivity.class);
         mActivityClassList.add(WidgetActivity.class);
         mActivityClassList.add(LayoutActivity.class);
@@ -91,6 +94,7 @@ public class MainActivity extends Activity {
         List<String> titles = new ArrayList<>();
 
 
+        titles.add(TITLE_UI_LOGIN);
         titles.add(TITLE_UI_ACTIVITY);
         titles.add(TITLE_UI_WIDGET);
         titles.add(TITLE_UI_LAYOUT);
