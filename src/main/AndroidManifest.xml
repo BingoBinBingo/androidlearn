@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".practice.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -20,6 +20,7 @@
         <activity android:name=".ui.activity.SecondActivity"/>
         <activity android:name=".ui.widget.WidgetActivity"/>
         <activity android:name=".ui.widget.LayoutActivity"/>
+
 
         <activity android:name=".datastorage.file.FileStorageActivity"/>
         <activity android:name=".datastorage.sp.SharedPreferenceStorageActivity"/>
