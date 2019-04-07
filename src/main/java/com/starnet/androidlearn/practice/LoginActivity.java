@@ -14,7 +14,7 @@ import android.widget.EditText;
 import com.starnet.androidlearn.R;
 
 /**
- * Created by dbz on 19-4-7.
+ * Created by pjh on 19-4-7.
  */
 
 public class LoginActivity extends Activity implements View.OnClickListener {
