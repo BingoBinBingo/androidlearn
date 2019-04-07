@@ -4,4 +4,9 @@
     <string name="button_1">Button1</string>
     <string name="button_2">Button2</string>
     <string name="buttonx_XX3">Button3</string>
+    <string name="button_3">Button3</string>
+
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="login_button">登录</string>
 </resources>
