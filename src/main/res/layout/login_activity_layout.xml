@@ -29,6 +29,7 @@
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="50dp"
         >
 
         <TextView
@@ -53,7 +54,8 @@
             android:text="@string/login_button"
             android:textSize="24dp"
             android:textColor="@android:color/black"
-            android:layout_marginLeft="150dp"/>
-
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="50dp"
+            />
 
 </LinearLayout>
