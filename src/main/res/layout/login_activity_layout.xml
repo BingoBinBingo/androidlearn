@@ -2,10 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="250dp"
-    android:paddingLeft="20dp">
+    android:paddingTop="220dp"
+    android:paddingLeft="25dp">
     <LinearLayout
-        android:layout_width="350dp"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
 
@@ -15,10 +15,10 @@
             android:layout_height="wrap_content"
             android:gravity="center|left"
             android:text="@string/username"
-            android:textSize="24sp"
+            android:textSize="25sp"
             android:textColor="@android:color/black"/>
         <EditText
-            android:id="@+id/login_username"
+            android:id="@+id/username"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:background="#e3e3e3"
@@ -36,24 +36,23 @@
             android:layout_height="wrap_content"
             android:gravity="center|left"
             android:text="@string/password"
-            android:textSize="24sp"
+            android:textSize="25sp"
             android:textColor="@android:color/black"/>
         <EditText
-            android:id="@+id/login_password"
-            android:layout_width="250dp"
+            android:id="@+id/password"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:background="#e3e3e3"
             android:inputType="textPassword"
             />
         </LinearLayout>
         <Button
-            android:id="@+id/login_button"
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/login_button"
-            android:textSize="24dp"
+            android:textSize="25dp"
             android:textColor="@android:color/black"
             android:layout_marginLeft="150dp"/>
-
 
 </LinearLayout>

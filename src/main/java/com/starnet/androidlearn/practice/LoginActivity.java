@@ -29,18 +29,17 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         Log.d(TAG, "onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity_layout);
-        loginButton = (Button) findViewById(R.id.login_button);
-        username = (EditText) findViewById(R.id.login_username);
-        password = (EditText) findViewById(R.id.login_password);
+        loginButton = (Button) findViewById(R.id.button);
+        username = (EditText) findViewById(R.id.username);
+        password = (EditText) findViewById(R.id.password);
         loginButton.setOnClickListener(this);
-        createFile();
+        mSharedPreferences = getPreferences(Context.MODE_PRIVATE);
+
         initData();
 
     }
 
-    private void createFile() {
-        mSharedPreferences = getPreferences(Context.MODE_PRIVATE);
-    }
+
 
     private void initData() {
         if(mSharedPreferences.contains("username")&&mSharedPreferences.contains("password")){
@@ -57,8 +56,6 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        Log.d(TAG, "loginButton");
-
        if (username.getText().toString().isEmpty()) {
             AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
             builder.setTitle("提示");
@@ -67,7 +64,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         } else if (password.getText().toString().isEmpty()) {
             AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
             builder.setTitle("提示");
-            builder.setMessage("密码不能为空");
+            builder.setMessage("密码输入不能为空");
             builder.show();
         } else {
            SharedPreferences.Editor editor = mSharedPreferences.edit();
@@ -75,5 +72,5 @@ public class LoginActivity extends Activity implements View.OnClickListener {
            editor.putString("password",password.getText().toString());
            editor.commit();
         }
-    }
+    }s
 }
